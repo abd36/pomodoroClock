@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	height: 100%;
+	background-color: #101214;
+}
+
+@font-face {
+	font-family: 'headerFont';
+	src: url('KITCHENPOLICE.TTF');
+}
+
+h1 {
+	color: #adb0b6;
+	text-align: center;
+	font-size: 100px;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	font-family: 'headerFont';
+}
+
+#clockContainerdiv {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1300px;
+	grid-template-rows: 100px 300px auto;
+	grid-template-areas:
+		'config'
+		'clock'
+		'controls';
+	color: white;
+}
+
+#configDiv {
+	grid-area: config;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	color: #787d87;
+}
+
+#clockDiv {
+	grid-area: clock;
+	display: grid;
+	grid-template-columns: 1fr 170px 1fr;
+	grid-auto-rows: 1fr;
+	grid-template-areas: 'min colon sec';
+	font-size: 520px;
+	line-height: 270px;
+}
+
+#controlsDiv {
+	grid-area: controls;
+	margin-top: 15px;
+	display: grid;
+	grid-auto-columns: auto;
+	grid-template-rows: auto auto;
+	grid-auto-flow: column;
+	justify-content: space-around;
+	font-size: 60px;
+	justify-items: center;
+	color: #60646c;
+}
+
+
+
+
+
+
+
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+input {
+	height: 55px;
+	font-size: 70px;
+	max-width: 95px;
+	color: #787d87;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #303236;
+	box-sizing: border-box;
+	padding: 0px 10px;
+	outline: none;
+	text-align: center;
+	font-family: 'Iceland', cursive;
+}
+
+
+
+#colonText {
+	align-self: center;
+	text-align: center;
+}
+
+#colon {
+	grid-area: colon;
+	text-align: center;
+	line-height: 210px;
+}
+
+
+
+#mins {
+	grid-area: min;
+	text-align: right;
+}
+
+#secs {
+	grid-area: sec;
+	text-align: left;
+}
+
+
+
+
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#controlsKeysDiv {
+	grid-area: controlsKeys;
+	display: flex;
+	justify-content: space-around;
+}
+
+.controlT {
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	padding-top: 5px;
+}

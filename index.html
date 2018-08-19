@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="UTF-8">
+				<title>Pomodoro Clock</title>
+				<link rel="stylesheet" href="style.css">
+				<script src="script.js"></script>
+				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Volkhov:400" rel="stylesheet">
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		</head>
+		<body style="font-family: 'Iceland', cursive;">
+			<h1>POMODORO CLOCK</h1>
+			
+			<div id='clockContainerdiv'>
+				<div id='configDiv'>
+					<form>
+						<input type="text" name="text">
+						WORK
+					</form>
+					<form>
+						<input type="text" name="text">
+						BREAK
+					</form>
+				</div>
+				
+				<div id='clockDiv'>
+					<p id='mins'>25</p>
+					<p id='colon'>:</p>
+					<p id='secs'>00</p>
+				</div>
+				
+				<div id='controlsDiv'>
+					<i class="fas fa-backward"></i>
+					<p class="controlT" style="padding-left: 7px">[b]</p>
+					<i class="fas fa-undo"></i>
+					<p class="controlT">[r]</p>
+					<i class="fas fa-play"></i>
+					<p class="controlT" style="padding-right: 8px">[p]</p>
+					<i class="fas fa-stop"></i>
+					<p class="controlT">[s]</p>
+					<i class="fas fa-forward"></i>
+					<p class="controlT" style="padding-right: 6px">[f]</p>
+				</div>
+			</div>
+	</body>
+</html>
