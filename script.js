@@ -49,6 +49,8 @@ function keyPress(e) {
 function submit() {
 	stopCountdown();
 	countdown();
+	workI.blur();
+	breakI.blur();
 }
 
 function inputChange() {
