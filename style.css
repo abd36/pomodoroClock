@@ -61,6 +61,7 @@ h1 {
 
 #controlsDiv {
 	grid-area: controls;
+	justify-self: center;
 	margin-top: 30px;
 	display: grid;
 	grid-auto-columns: auto;
@@ -70,6 +71,7 @@ h1 {
 	font-size: 40px;
 	justify-items: center;
 	color: #60646c;
+	width: 420px;
 }
 
 form {
@@ -115,12 +117,6 @@ input {
 #secs {
 	grid-area: sec;
 	text-align: left;
-}
-
-#controlsKeysDiv {
-	grid-area: controlsKeys;
-	display: flex;
-	justify-content: space-around;
 }
 
 .controlT {
