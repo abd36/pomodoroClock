@@ -8,6 +8,7 @@ const reset = document.getElementById('reset');
 const forward = document.getElementById('forward');
 const stop = document.getElementById('stop');
 const playPause = document.getElementById('play');
+const sound = document.getElementById('sound');
 
 let minInt = workI.value;
 let secInt = 0;
@@ -56,18 +57,19 @@ function inputChange() {
 
 function checkEndOfTimer() {
 	if ((secInt <= 0 && minInt <= 0) || minInt < 0) {
+		sound.play();
 		if (workState) {
 			workState = false;
 			workI.style.borderColor = '#303236';
 			breakI.style.borderColor = '#787d87';
 			minInt = breakI.value;
-			secInt = 5;
+			secInt = 0;
 		} else {
 			workState = true;
 			breakI.style.borderColor = '#303236';
 			workI.style.borderColor = '#787d87';
 			minInt = workI.value;
-			secInt = 5;
+			secInt = 0;
 		}
 	}
 }
