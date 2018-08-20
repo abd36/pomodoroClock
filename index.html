@@ -16,12 +16,12 @@
 			
 			<div id='clockContainerdiv'>
 				<div id='configDiv'>
-					<form>
-						<input type="text" name="text">
+					<form onsubmit="return false">
+						<input type="text" id='workInput' autocomplete="off" maxlength="2" oninput="inputChange()">
 						WORK
 					</form>
-					<form>
-						<input type="text" name="text">
+					<form onsubmit="return false">
+						<input type="text" id='breakInput' autocomplete="off" maxlength="2">
 						BREAK
 					</form>
 				</div>
@@ -33,15 +33,15 @@
 				</div>
 				
 				<div id='controlsDiv'>
-					<i class="fas fa-backward"></i>
+					<i class="fas fa-backward btn" id='back'></i>
 					<p class="controlT" style="padding-left: 4px">[b]</p>
-					<i class="fas fa-undo"></i>
-					<p class="controlT">[r]</p>
-					<i class="fas fa-play"></i>
-					<p class="controlT" style="padding-right: 8px">[p]</p>
-					<i class="fas fa-stop"></i>
+					<i class="fas fa-stop btn" id='stop'></i>
 					<p class="controlT">[s]</p>
-					<i class="fas fa-forward"></i>
+					<i class="fas fa-play btn" id='play'></i>
+					<p class="controlT">[p]</p>
+					<i class="fas fa-undo btn" id='reset'></i>
+					<p class="controlT">[r]</p>
+					<i class="fas fa-forward btn" id='forward'></i>
 					<p class="controlT" style="padding-right: 2px">[f]</p>
 				</div>
 			</div>

@@ -81,6 +81,8 @@ form {
 	font-family: 'Oswald', sans-serif;
 	padding-right: 15px;
 	padding-left: 15px;
+	position:relative;
+	z-index:2;
 }
 
 input {
@@ -90,9 +92,8 @@ input {
 	color: #787d87;
 	background: transparent;
 	border: none;
-	border-bottom: 2px solid #303236;
+	border-bottom: 2px solid;
 	box-sizing: border-box;
-	padding: 0px 10px;
 	outline: none;
 	text-align: center;
 	font-family: 'Iceland', cursive;
@@ -140,4 +141,9 @@ input {
 	font-family: 'headerFont';
 	font-size: 12px;
 	font-style: italic;
+}
+
+i:hover {
+	color: #93979f;
+	transform: scale(1.1);
 }
