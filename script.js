@@ -73,6 +73,7 @@ function checkEndOfTimer() {
 			minInt = workI.value;
 			secInt = 0;
 		}
+		countdown();
 	}
 }
 
